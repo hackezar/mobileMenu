@@ -13,7 +13,7 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 3.5fr 6fr;
+  grid-template-rows: 0.5fr 3fr 6.5fr;
   align-items: center;
 }
 
@@ -51,6 +51,7 @@ body {
 #headerAvatar {
   border-radius: 100%;
   height: 16vh;
+  box-shadow: var(--shadow);
 }
 
 .avatarName {
@@ -69,7 +70,7 @@ body {
 }
 
 .main {
-  height: 60vh;
+  height: 65vh;
   background-color: 	#414a4c;
   grid-row: 3/4;
   grid-column: 1/3;
@@ -82,6 +83,10 @@ body {
 
 .mainBtn {
   height: 5vh;
+  border-radius: 100%;
+  background-color: white;
+  padding: 3.5rem;
+  box-shadow: var(--shadow);
 }
 
 .btnText {
@@ -89,6 +94,11 @@ body {
 }
 
 .btnDiv {
-  border-radius: 100%;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnText {
+  padding-top: 1.5rem;
+  text-align: center;
 }
